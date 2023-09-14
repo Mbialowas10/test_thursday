@@ -1,0 +1,8 @@
+<h1>All Companies</h1>
+<ul>
+  <% @companies.each do |c| %>
+    <li><%= link_to c.name, company_path(c) %></li>
+  <% end %>
+</ul>
+
+<p>Find me in app/views/companies/index.html.erb</p>

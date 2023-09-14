@@ -1,0 +1,32 @@
+Model: Company (map to db companies)
+- id: integer (AutoIncrementing PK)
+- name:string
+- created_at: timestamp
+- updated_at: timpestamp
+
+Beer (map db table beers)
+- id: integer (AutoIncrementing PK)
+- name:string
+- created_at: timestamp
+- updated_at: timestamp
+
+Routes
+GET         /companies        => companies#index (Collection of companies)
+GET         /companies/:id    => companies#show (specific company)
+
+
+Controller: CompaniesController
+- action: index
+- action: show
+
+Views:
+- view:   index     /app/views/companies/index.html.erb
+- show:   show      /app/views/companies/show.html.erb
+
+
+
+
+
+View
+
+Controller

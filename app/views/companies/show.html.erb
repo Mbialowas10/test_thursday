@@ -1,0 +1,8 @@
+<h1>Company Name: <%= @company.name %></h1>
+<ul>
+  <% @company.beers.each do |b| %>
+  <li><%= link_to b.name, beer_path(b) %></li>
+  <%end %>
+</ul>
+
+<p>Find me in app/views/companies/show.html.erb</p>
